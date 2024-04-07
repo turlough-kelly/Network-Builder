@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: linear-gradient(to bottom, white, rgb(220, 220, 220));" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.network_builder.diagramController">
+   <center>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="868.0" prefWidth="1573.0" style="-fx-background-color: transparent;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="0.0" prefWidth="1429.0" />
+            <GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="725.0" prefWidth="1440.0" snapToPixel="false">
+               <children>
+                  <GridPane alignment="CENTER" prefHeight="517.0" prefWidth="976.0" style="-fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="106.0" stroke="BLACK" strokeType="INSIDE" width="185.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="106.0" stroke="BLACK" strokeType="INSIDE" width="185.0" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="106.0" stroke="BLACK" strokeType="INSIDE" width="185.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="106.0" stroke="BLACK" strokeType="INSIDE" width="185.0" GridPane.columnIndex="4" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="106.0" stroke="BLACK" strokeType="INSIDE" width="185.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="106.0" stroke="BLACK" strokeType="INSIDE" width="185.0" GridPane.columnIndex="2" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="106.0" stroke="BLACK" strokeType="INSIDE" width="185.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="106.0" stroke="BLACK" strokeType="INSIDE" width="185.0" GridPane.rowIndex="4" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="106.0" stroke="BLACK" strokeType="INSIDE" width="185.0" GridPane.rowIndex="2" />
+                        <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="179.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <children>
+                              <Line endX="88.0" endY="323.0" layoutX="90.0" layoutY="107.0" startX="-88.0" startY="-13.0" />
+                              <Line endX="88.0" layoutX="90.0" layoutY="261.0" startX="-88.0" />
+                              <Line endX="88.0" endY="-13.0" layoutX="90.0" layoutY="522.0" startX="-88.0" startY="-13.0" />
+                              <Line endX="88.0" endY="10.0" layoutX="90.0" startX="-88.0" startY="10.0" />
+                              <Line endX="88.0" endY="156.0" layoutX="90.0" layoutY="313.0" startX="-88.0" />
+                              <Line endX="95.0" endY="119.0" layoutX="84.0" layoutY="105.0" startX="-81.0" startY="-50.0" />
+                              <Line endX="88.0" endY="-207.0" layoutX="91.0" layoutY="260.0" startX="-88.0" startY="-40.0" />
+                              <Line endX="88.0" endY="-173.0" layoutX="90.0" layoutY="470.0" startX="-88.0" />
+                              <Line endX="88.0" endY="-323.0" layoutX="90.0" layoutY="415.0" startX="-88.0" startY="13.0" />
+                              <Line endX="88.0" endY="-323.0" layoutX="90.0" layoutY="415.0" startX="-88.0" startY="13.0" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="179.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                           <children>
+                              <Line endX="88.0" endY="323.0" layoutX="90.0" layoutY="107.0" startX="-88.0" startY="-13.0" />
+                              <Line endX="88.0" layoutX="90.0" layoutY="261.0" startX="-88.0" />
+                              <Line endX="88.0" endY="-13.0" layoutX="90.0" layoutY="522.0" startX="-88.0" startY="-13.0" />
+                              <Line endX="88.0" endY="10.0" layoutX="90.0" startX="-88.0" startY="10.0" />
+                              <Line endX="88.0" endY="156.0" layoutX="90.0" layoutY="313.0" startX="-88.0" startY="-13.0" />
+                              <Line endX="95.0" endY="119.0" layoutX="84.0" layoutY="105.0" startX="-81.0" startY="-50.0" />
+                              <Line endX="88.0" endY="-207.0" layoutX="91.0" layoutY="260.0" startX="-88.0" startY="-40.0" />
+                              <Line endX="88.0" endY="-173.0" layoutX="90.0" layoutY="470.0" startX="-88.0" />
+                              <Line endX="88.0" endY="-323.0" layoutX="90.0" layoutY="411.0" startX="-88.0" startY="13.0" />
+                           </children>
+                        </AnchorPane>
+                        <Button mnemonicParsing="false" prefHeight="122.0" prefWidth="227.0" style="-fx-background-color: transparent; -fx-border-radius: 5px;">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <tooltip>
+                              <Tooltip text="First Stage" />
+                           </tooltip>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="113.0" prefWidth="193.0" style="-fx-background-color: transparent; -fx-border-radius: 5px;" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <tooltip>
+                              <Tooltip text="First Stage" />
+                           </tooltip>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="135.0" prefWidth="236.0" style="-fx-background-color: transparent; -fx-border-radius: 5px;" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <tooltip>
+                              <Tooltip text="First Stage" />
+                           </tooltip>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="104.0" prefWidth="203.0" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-border-radius: 5px;" GridPane.columnIndex="2">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <tooltip>
+                              <Tooltip text="Middle Stage" textAlignment="CENTER" />
+                           </tooltip>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="113.0" prefWidth="220.0" style="-fx-background-color: transparent; -fx-border-radius: 5px;" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="142.0" prefWidth="400.0" style="-fx-background-color: transparent; -fx-border-radius: 5px;" GridPane.columnIndex="4">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <tooltip>
+                              <Tooltip text="Third Stage" />
+                           </tooltip>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="132.0" prefWidth="327.0" style="-fx-background-color: transparent; -fx-border-radius: 5px;" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <tooltip>
+                              <Tooltip text="Third Stage" />
+                           </tooltip>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="160.0" prefWidth="365.0" style="-fx-background-color: transparent; -fx-border-radius: 5px;" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <tooltip>
+                              <Tooltip text="Third Stage" />
+                           </tooltip>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="150.0" prefWidth="316.0" style="-fx-background-color: transparent; -fx-border-radius: 5px;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <tooltip>
+                              <Tooltip text="Middle Stage" />
+                           </tooltip>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="104.0" prefWidth="203.0" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-border-radius: 5px;" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <tooltip>
+                              <Tooltip text="Middle Stage" textAlignment="CENTER" />
+                           </tooltip>
+                        </Button>
+                        <Label fx:id="s11" />
+                        <Label fx:id="s33" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                        <Label fx:id="s32" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                        <Label fx:id="s31" GridPane.columnIndex="4" />
+                        <Label fx:id="s23" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                        <Label fx:id="s21" GridPane.columnIndex="2" />
+                        <Label fx:id="s13" GridPane.rowIndex="4" />
+                        <Label fx:id="s12" GridPane.rowIndex="2" />
+                        <Label fx:id="s1n2" text="2" translateY="40.0" GridPane.rowIndex="1" />
+                        <Label fx:id="s2n2" text="2" translateY="40.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <Label fx:id="s3n2" text="2" translateY="40.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                        <Label fx:id="s1n3" translateY="40.0" GridPane.rowIndex="3" />
+                        <Label fx:id="s2n3" translateY="40.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <Label fx:id="s3n3" translateY="40.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                        <Label alignment="CENTER" prefHeight="10.0" prefWidth="107.0" rotate="90.0" text=".   .   .   ." textAlignment="CENTER" translateX="5.0" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="10.0" prefWidth="107.0" rotate="90.0" text=".   .   .   ." textAlignment="CENTER" translateX="5.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="10.0" prefWidth="107.0" rotate="90.0" text=".   .   .   ." textAlignment="CENTER" translateX="5.0" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="middle" mnemonicParsing="false" onAction="#showMiddleStage" prefHeight="44.0" prefWidth="143.0" style="-fx-background-color: transparent; -fx-border-color: #ccc; -fx-border-radius: 5px; -fx-cursor: hand;" text="View Middle Stage Network" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Tw Cen MT" size="10.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="s22" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="522.0" prefWidth="179.0" rotate="180.0" GridPane.rowIndex="1">
+                     <children>
+                        <Line endY="-13.0" layoutX="90.0" layoutY="107.0" startX="-88.0" startY="-13.0" />
+                        <Line layoutX="90.0" layoutY="261.0" startX="-88.0" />
+                        <Line endY="-13.0" layoutX="90.0" layoutY="522.0" startX="-88.0" startY="-13.0" />
+                        <Line endY="10.0" layoutX="90.0" startX="-88.0" startY="10.0" />
+                        <Line endY="-13.0" layoutX="90.0" layoutY="313.0" startX="-88.0" startY="-13.0" />
+                        <Line endX="7.0" endY="-50.0" layoutX="84.0" layoutY="105.0" startX="-81.0" startY="-50.0" />
+                        <Line endY="-40.0" layoutX="91.0" layoutY="260.0" startX="-88.0" startY="-40.0" />
+                        <Line layoutX="90.0" layoutY="470.0" startX="-88.0" />
+                        <Line endY="13.0" layoutX="90.0" layoutY="415.0" startX="-88.0" startY="13.0" />
+                        <Line endX="100.0" layoutX="52.0" layoutY="486.0" startX="-50.0" translateY="-513.0" />
+                        <Line endX="100.0" startX="-50.0" translateX="53.0" translateY="546.0" />
+                        <Line endX="172.0" rotate="90.0" startX="-400.0" translateX="267.0" translateY="260.0" />
+                        <Label fx:id="input" layoutX="96.0" layoutY="217.0" prefHeight="101.0" prefWidth="100.0" rotate="180.0" text="Inputs" textAlignment="RIGHT" translateX="15.0" translateY="-7.0">
+                           <padding>
+                              <Insets bottom="3.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="in1" layoutX="101.0" layoutY="420.0" rotate="180.0" text="Label" />
+                        <Label fx:id="in2" layoutX="101.0" layoutY="213.0" rotate="180.0" text="Label" />
+                        <Label fx:id="in3" layoutX="99.0" layoutY="7.0" rotate="180.0" text="Label" />
+                        <Label fx:id="in11" layoutX="106.0" layoutY="291.0" rotate="180.0" text="1" />
+                        <Label fx:id="in12" layoutX="106.0" layoutY="252.0" rotate="180.0" text="2" />
+                        <Label fx:id="in13" layoutX="106.0" layoutY="461.0" rotate="180.0" text="2" />
+                        <Label fx:id="in14" layoutX="106.0" layoutY="500.0" rotate="180.0" text="1" />
+                        <Label fx:id="in15" layoutX="106.0" layoutY="85.0" rotate="180.0" text="1" />
+                        <Label fx:id="in16" layoutX="107.0" layoutY="46.0" rotate="180.0" text="2" />
+                        <Label layoutX="28.0" layoutY="441.0" rotate="90.0" text=".   .   .   .">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="25.0" rotate="90.0" text=".   .   .   .">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="234.0" rotate="90.0" text=".   .   .   .">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="111.0" prefWidth="900.0" GridPane.columnIndex="1">
+                     <children>
+                        <Label fx:id="s1n1" layoutX="82.0" layoutY="67.0" text="1" />
+                        <Label fx:id="s2n1" layoutX="447.0" layoutY="67.0" text="1" />
+                        <Label fx:id="s3n1" layoutX="808.0" layoutY="67.0" text="1" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="522.0" prefWidth="179.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <children>
+                        <Line endY="-13.0" layoutX="90.0" layoutY="107.0" startX="-88.0" startY="-13.0" />
+                        <Line layoutX="90.0" layoutY="261.0" startX="-88.0" />
+                        <Line endY="-13.0" layoutX="90.0" layoutY="522.0" startX="-88.0" startY="-13.0" />
+                        <Line endY="10.0" layoutX="90.0" startX="-88.0" startY="10.0" />
+                        <Line endY="-13.0" layoutX="90.0" layoutY="313.0" startX="-88.0" startY="-13.0" />
+                        <Line endX="7.0" endY="-50.0" layoutX="84.0" layoutY="105.0" startX="-81.0" startY="-50.0" />
+                        <Line endY="-40.0" layoutX="91.0" layoutY="260.0" startX="-88.0" startY="-40.0" />
+                        <Line layoutX="90.0" layoutY="470.0" startX="-88.0" />
+                        <Line endY="13.0" layoutX="90.0" layoutY="415.0" startX="-88.0" startY="13.0" />
+                        <Line endX="100.0" layoutX="52.0" layoutY="486.0" startX="-50.0" translateY="-513.0" />
+                        <Line endX="100.0" startX="-50.0" translateX="53.0" translateY="546.0" />
+                        <Line endX="172.0" rotate="90.0" startX="-400.0" translateX="267.0" translateY="260.0" />
+                        <Label fx:id="output" alignment="CENTER_RIGHT" layoutX="96.0" layoutY="218.0" prefHeight="101.0" prefWidth="100.0" text="Outputs" textAlignment="RIGHT" translateX="15.0" translateY="-7.0">
+                           <padding>
+                              <Insets bottom="3.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="out3" layoutX="106.0" layoutY="501.0" text="Label" />
+                        <Label fx:id="out2" layoutX="106.0" layoutY="292.0" text="Label" />
+                        <Label fx:id="out1" layoutX="106.0" layoutY="86.0" text="Label" />
+                        <Label fx:id="in111" layoutX="107.0" layoutY="212.0" text="1" />
+                        <Label fx:id="in121" layoutX="106.0" layoutY="253.0" text="2" />
+                        <Label fx:id="in131" layoutX="106.0" layoutY="462.0" text="2" />
+                        <Label fx:id="in141" layoutX="106.0" layoutY="420.0" text="1" />
+                        <Label fx:id="in151" layoutX="106.0" layoutY="2.0" text="1" />
+                        <Label fx:id="in161" layoutX="107.0" layoutY="47.0" text="2" />
+                        <Label layoutX="28.0" layoutY="484.0" rotate="90.0" text=".   .   .   .">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="68.0" rotate="90.0" text=".   .   .   .">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="275.0" rotate="90.0" text=".   .   .   .">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="300.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1122.0" minWidth="333.0" percentWidth="0.0" prefWidth="900.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="0.0" prefWidth="300.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="92.0" minHeight="82.0" prefHeight="89.0" valignment="TOP" />
+                  <RowConstraints maxHeight="521.0" minHeight="10.0" prefHeight="517.0" valignment="CENTER" vgrow="ALWAYS" />
+                  <RowConstraints maxHeight="236.0" minHeight="10.0" prefHeight="114.0" valignment="BOTTOM" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <Button fx:id="stageReturn" mnemonicParsing="false" onAction="#returnToPreviousStage" prefHeight="44.0" prefWidth="143.0" style="-fx-background-color: transparent; -fx-border-color: #ccc; -fx-border-radius: 5px; -fx-cursor: hand;" text="Return to Previous Stages">
+               <font>
+                  <Font name="Tw Cen MT" size="10.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </center>
+   <left>
+      <VBox fx:id="menu" alignment="TOP_CENTER" prefHeight="866.0" prefWidth="154.0" style="-fx-background-color: rgb(220, 220, 220);" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="TOP_CENTER" prefHeight="58.0" prefWidth="203.0" text="Options" textAlignment="CENTER" underline="true">
+               <font>
+                  <Font size="41.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </Label>
+            <Button alignment="TOP_CENTER" onAction="#onDiagramInfoClick" prefHeight="25.0" prefWidth="194.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-radius: 5px; -fx-cursor: hand;" text="Reading the Diagram">
+               <font>
+                  <Font name="Tw Cen MT" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin></Button>
+            <Button fx:id="equations" alignment="TOP_CENTER" onAction="#viewEquations" prefHeight="25.0" prefWidth="194.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-radius: 5px; -fx-cursor: hand;" text="Equations Used">
+               <font>
+                  <Font name="Tw Cen MT" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </Button>
+            <Button alignment="TOP_CENTER" onAction="#onReturnClick" prefHeight="25.0" prefWidth="194.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-radius: 5px; -fx-cursor: hand;" text="Home">
+               <font>
+                  <Font name="Tw Cen MT" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <right>
+      <VBox fx:id="menu1" alignment="TOP_CENTER" prefHeight="866.0" prefWidth="195.0" style="-fx-background-color: rgb(220, 220, 220);" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="58.0" prefWidth="203.0" text="Diagram Info" textAlignment="CENTER" underline="true" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font size="33.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="stages" text="Total Number of Stages: 3">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="15.0" />
+               </padding>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="cp_count" text="Total Number of Crosspoints: 100000">
+               <padding>
+                  <Insets bottom="15.0" />
+               </padding>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="r_value" text="Optimum Value for R: 50">
+               <padding>
+                  <Insets bottom="15.0" />
+               </padding>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="n_value" text="Optimum Value for N: 100">
+               <padding>
+                  <Insets bottom="15.0" />
+               </padding>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="in_value" text="Total Inputs: 1000">
+               <padding>
+                  <Insets bottom="15.0" />
+               </padding>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="ex_time" text="Execution Time: 1000ms">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <padding>
+                  <Insets bottom="15.0" />
+               </padding>
+            </Label>
+         </children>
+      </VBox>
+   </right>
+   <top>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: rgb(220, 220, 220);" BorderPane.alignment="TOP_RIGHT">
+        <items>
+          <Button mnemonicParsing="false" onAction="#toggleMenu" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-radius: 5px; -fx-cursor: hand;" text="Options and Information">
+               <font>
+                  <Font name="Tw Cen MT" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="stage_view" alignment="CENTER" contentDisplay="TEXT_ONLY" text="Currently Viewing: Stages 1 - 37" textAlignment="JUSTIFY" translateX="700.0">
+               <font>
+                  <Font name="Tw Cen MT" size="12.0" />
+               </font>
+            </Label>
+        </items>
+      </ToolBar>
+   </top>
+</BorderPane>

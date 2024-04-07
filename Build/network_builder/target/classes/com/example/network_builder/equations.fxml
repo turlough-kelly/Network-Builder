@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: linear-gradient(to bottom, white, rgb(220, 220, 220));" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.network_builder.networkController">
+   <top>
+      <TabPane prefHeight="1186.0" prefWidth="1920.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-radius: 5px;" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab text="Clos Switch">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="248.0" prefWidth="1920.0">
+                     <children>
+                        <GridPane layoutX="6.0" layoutY="3.0" prefHeight="1011.0" prefWidth="1773.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="85.33332824707031" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="176.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="287.0" minHeight="5.666656494140625" prefHeight="46.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="362.3333435058594" minHeight="0.0" prefHeight="44.666656494140625" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="423.33335876464844" minHeight="10.0" prefHeight="156.33331298828125" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="401.3333435058594" minHeight="10.0" prefHeight="122.66668701171875" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="309.33331298828125" minHeight="10.0" prefHeight="40.66668701171875" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="317.0" minHeight="0.0" prefHeight="164.33331298828125" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="250.66668701171875" minHeight="10.0" prefHeight="109.66668701171875" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="185.33331298828125" minHeight="10.0" prefHeight="185.33331298828125" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="When devising a network using Clos switches, the equations below are used to determine the switch dimensions and crosspoint count depending on the input size and the number of stages, &#10;with the equations changing slightly depending on the number of stages.">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Networks with 3 stages" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="When creating a network of 3 stages, the following equation is used:" GridPane.rowIndex="2" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cx = 2rnm + mrr" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="System Italic" size="24.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="With N, r, n and m being:&#10;N = number of inputs in the network&#10;n = any number where 1 &lt;= n &lt;= N -1 &#10;r = N/n (if N % n = 0) OR floor(N / n) + 1 (if N % n != 0)&#10;m = 2n - 1&#10;&#10;Note that when choosing values, you must choose values such that nr = N.&#10;" GridPane.rowIndex="4" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Networks with more than 3 stages" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="For networks with more than 3 stages, the middle stage represents a collection of smaller networks that will need to be accounted for in our calculations. &#10;As such, the following equation is used:" wrappingWidth="1069.7714004516602" GridPane.rowIndex="6" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cx = 2rnm + m(min(x - 2, r))" GridPane.rowIndex="7">
+                                 <font>
+                                    <Font name="System Italic" size="24.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="With N, r, n and m being:&#10;N = number of inputs in the network&#10;n = any number where 1 &lt;= n &lt;= N -1 &#10;r = N/n (if N % n = 0) OR floor(N / n) + 1 (if N % n != 0)&#10;m = 2n - 1&#10;" GridPane.rowIndex="8" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="The &quot;min&quot; represents the same equation used, taking into account m being in place of N and the stage count being 2 less than the stage count of the overall network.&#10;Should the number of stages in min equal 3, then you replace min with the 3-stage equation. Otherwise, you use the recursive min.&#10;The best approach to take would be to break down each equation individually, before combining each in the full network equation. &#10;&#10;See the &quot;Examples&quot; tab for more deatils." GridPane.rowIndex="9" />
+                           </children>
+                        </GridPane>
+                        <Button fx:id="button1" alignment="TOP_CENTER" layoutX="1795.0" layoutY="1015.0" mnemonicParsing="false" onAction="#viewDiagram" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-radius: 5px; -fx-cursor: hand;" text="Return to Graph">
+                           <font>
+                              <Font name="Tw Cen MT" size="12.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Slepian Switch">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <GridPane layoutX="9.0" layoutY="13.0" prefHeight="1011.0" prefWidth="1780.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="The Slepian network has two ways of computing the number of crosspoints for the network: a method very similar to the Clos method,&#10;and another that can be easily calculated in a much easier way. Both methods are showcased below." textAlignment="CENTER" wrappingWidth="1793.3333740234375">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Networks with 3 stages" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="When creating a network of 3 stages, the following equation is used:" GridPane.rowIndex="2" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cx = 2((2r)(n)) + ((2n)(r))" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="System Italic" size="24.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="With N, r and m being:&#10;N = number of inputs in the network&#10;r = any number where 1 &lt;= n &lt;= N -1 &#10;n = N/r (if N % r = 0) OR ceil(N / r) (if N % r != 0)&#10;&#10;Note that when choosing values, you must choose values such that mr = N.&#10;" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Networks with more than 3 stages" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="For networks with more than 3 stages, the middle stage represents a collection of smaller networks that will need to be accounted for in our calculations. &#10;As such, the following equation is used:" wrappingWidth="1069.7714004516602" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cx = 2((2r)(n)) + (r)(min(x - 2, n))" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="System Italic" size="24.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="With N, r, n and x being:&#10;N = number of inputs in the network&#10;r = any number where 1 &lt;= n &lt;= N -1 &#10;m = N/r (if N % r = 0) OR ceil(N / r) (if N % r != 0)&#10;x = stage count&#10;&#10;Once calculated, the entire equation is multiplied by the stage count.&#10;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="The &quot;min&quot; represents the same equation used, taking into account m being in place of N and the stage count being 2 less than the stage count of the overall network.&#10;Should the number of stages in min equal 3, then you replace min with the 3-stage equation. Otherwise, you use the recursive min.&#10;The best approach to take would be to break down each equation individually, before combining each in the full network equation. &#10;&#10;See the &quot;Examples&quot; tab for more deatils." wrappingWidth="876.0234375" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="The second method involves a much simpler calculation, one that can be done without breaking down the network into many parts. The equation is as follows:" textAlignment="CENTER" wrappingWidth="1793.3333740234375" GridPane.rowIndex="6">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cx = 2(r)(m)(x)" textAlignment="CENTER" wrappingWidth="1785.80078125" GridPane.rowIndex="7">
+                                 <font>
+                                    <Font name="System Italic" size="24.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="With N, r, n and x being:&#10;N = number of inputs in the network&#10;r = any number where 1 &lt;= n &lt;= N -1 &#10;m = N/r (if N % r = 0) OR ceil(N / r) (if N % r != 0)&#10;x = stage count&#10;" textAlignment="CENTER" wrappingWidth="1820.9706525802612" GridPane.rowIndex="8">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="947.3333129882812" minWidth="10.0" prefWidth="944.6666870117188" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="883.3333129882812" minWidth="10.0" prefWidth="835.3333129882812" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="85.33332824707031" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="176.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="287.0" minHeight="5.666656494140625" prefHeight="46.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="362.3333435058594" minHeight="0.0" prefHeight="44.666656494140625" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="423.33335876464844" minHeight="10.0" prefHeight="156.33331298828125" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="401.3333435058594" minHeight="10.0" prefHeight="166.00003051757812" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="309.33331298828125" minHeight="10.0" prefHeight="145.3333740234375" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="317.0" minHeight="0.0" prefHeight="40.6666259765625" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="250.66668701171875" minHeight="10.0" prefHeight="175.3333740234375" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="256.6666259765625" minHeight="10.0" prefHeight="143.6666259765625" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <Button fx:id="button2" alignment="TOP_CENTER" layoutX="1812.0" layoutY="1013.0" mnemonicParsing="false" onAction="#viewDiagram" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-radius: 5px; -fx-cursor: hand;" text="Return to Graph">
+                           <font>
+                              <Font name="Tw Cen MT" size="12.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Examples">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <GridPane layoutX="7.0" layoutY="2.0" prefHeight="1049.0" prefWidth="1915.0">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="672.0" minWidth="10.0" prefWidth="672.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="312.3333435058594" minWidth="10.0" prefWidth="221.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="26.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="85.33333587646484" minHeight="0.0" prefHeight="85.33333587646484" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="261.33333587646484" minHeight="10.0" prefHeight="175.3333282470703" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="835.0" minHeight="10.0" prefHeight="269.6666717529297" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="630.6666564941406" minHeight="10.0" prefHeight="127.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="630.6666564941406" minHeight="10.0" prefHeight="399.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Clos Switch Example" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="For this example, we want to create a 7-stage network with an input size of 3003.&#10;In order to do so, we must find&#10;- The individual variables for each &quot;network&quot; (being the 7-stage, 5-stage and 3-stage networks)&#10;- The equations using the above variables, and&#10;- The full equation, combining the 3 above equations." GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Equations:&#10;7s - 2(231)(13)(25) + (25)(5s) &lt;-- &quot;5s&quot; represents the 5-stage equation below.&#10;5s - 2(33)(7)(13) + (13)(3s) &lt;-- &quot;3s&quot; represents the 3-stage equation below.&#10;3s - 2(11)(3)(5) + (5)(11)(11)" wrappingWidth="672.8424072265625" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Values for N, n, m, r:&#10;7 - N = 3003, n = 13, m = 25, r = 231&#10;&#10;For N = 3003, I've chosen n = 13 and r = 231, such that nr = N.&#10;As a result, m = 2(13) - 1 = 26 - 1 = 25.&#10;The same process is followed for the 3 and 5-stage networks below.&#10;&#10;5 - N = 231, n = 7, m = 13, r = 33&#10;&#10;For the 5-stage network, the previous r has become this stage's N. The same process above is then followed.&#10;&#10;3 - N = 33, n = 3, m = 5, r = 11&#10;&#10;Like above, the previous r has become this stage's N." GridPane.rowIndex="3">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Thus, the full equation is:&#10;&#10;2(231)(13)(25) + (25)(2(33)(7)(13) + (13)(2(11)(3)(5) + (5)(11)(11)) = 604175&#10;&#10;&#10;With the crosspoints calculated, you can then draw the diagram using the values for the 7-stage network we used above.&#10;" wrappingWidth="576.8170776367188" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Slepian Switch Example" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="For this example, we want to create a 7-stage network with an input size of 1296. Both methods will be shown.&#10;For the first method, we must:&#10;- The individual variables for each &quot;network&quot; (being the 7-stage, 5-stage and 3-stage networks)&#10;- The equations using the above variables, and&#10;- The full equation, combining the 3 above equations.&#10;&#10;For the second method, we need:&#10;- The variables for the full 7-stage network" wrappingWidth="679.95703125" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Values for N, n, m, r:&#10;7 - N = 1296, n = 216, r = 6&#10;&#10;For N = 1296, I've chosen n = 216 and r = 6, such that nr = N.&#10;The same process is followed for the 3 and 5-stage networks below.&#10;&#10;5 - N = 216, n = 36, r = 6&#10;&#10;For the 5-stage network, the previous r has become this stage's N. The same process above is then followed.&#10;&#10;3 - N = 36, n = 6, r = 6&#10;&#10;Like above, the previous r has become this stage's N." GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Equations:&#10;7s - 2(231)(13)(25) + (25)(5s) &lt;-- &quot;5s&quot; represents the 5-stage equation below.&#10;5s - 2(33)(7)(13) + (13)(3s) &lt;-- &quot;3s&quot; represents the 3-stage equation below.&#10;3s - 2(11)(3)(5) + (5)(11)(11)" wrappingWidth="672.8424072265625" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="When we put together the above equations, we multiply the final equation by the stage count.&#10;Thus, the full equation is:&#10;&#10;7(2(2(6)(6)) + (6)(2(2(6)(36)) + (6)(2(2(6)(6)) + 2(6)(6))))) = 54432&#10;&#10;&#10;WIth the crosspoints calculated, you can then draw the diagram using the values for the 7-stage network we used above.&#10;&#10;&#10;We can use the values of n and r from the 7-stage calculation to follow the simpler method:&#10;&#10;7((6)(6)(216)) = 54432&#10;" wrappingWidth="771.8170776367188" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <Button fx:id="button3" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#viewDiagram" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-radius: 5px; -fx-cursor: hand;" text="Return to Graph" translateX="800.0" translateY="150.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font name="Tw Cen MT" size="12.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </Button>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </top>
+</BorderPane>

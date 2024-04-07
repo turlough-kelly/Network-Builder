@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.network_builder.networkController">
+   <children>
+      <AnchorPane prefHeight="491.0" prefWidth="841.0" style="-fx-background-color: linear-gradient(to bottom, white, rgb(220, 220, 220));" StackPane.alignment="CENTER">
+         <children>
+            <GridPane alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="720.0" prefWidth="1280.0" snapToPixel="false" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onReturnClick" prefHeight="44.0" prefWidth="143.0" style="-fx-background-color: transparent; -fx-border-color: #ccc; -fx-border-radius: 5px; -fx-cursor: hand;" text="Return" GridPane.halignment="LEFT" GridPane.hgrow="NEVER" GridPane.valignment="BOTTOM" GridPane.vgrow="NEVER">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="15.0" left="15.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Slepian Switch" textAlignment="CENTER" wrappingWidth="959.662109375" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+                     <font>
+                        <Font name="Tw Cen MT" size="73.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#a4a4a4" strokeType="OUTSIDE" strokeWidth="0.0" text="a tool by Turlough Kelly" textAlignment="CENTER" wrappingWidth="503.841796875" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+                  <Text fill="#949494" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="960.13671875" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM" />
+                  <GridPane prefHeight="390.0" prefWidth="561.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <Label text="Switch Size" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Tw Cen MT" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="Number of Stages">
+                           <font>
+                              <Font name="Tw Cen MT" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="Input" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Tw Cen MT" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="Optimise Network?" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Tw Cen MT" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="slepian_input" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <CheckBox fx:id="slepian_opt" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Slider fx:id="slepian_slider" blockIncrement="2.0" majorTickUnit="2.0" max="29.0" min="3.0" minorTickCount="0" showTickLabels="true" snapToTicks="true" GridPane.columnIndex="1" />
+                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="424.0" style="-fx-background-color: transparent;" GridPane.rowIndex="3">
+                           <tooltip>
+                              <Tooltip text="Automatically selects the best number of stages for the given input. &#10;This overrides the number of stages selected above, so leave this unchecked if you want to manually input the number of stages. &#10;NOTE: Execution time will increase if this option is used." textAlignment="CENTER" wrapText="true">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font></Tooltip>
+                           </tooltip>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="279.0" style="-fx-background-color: transparent;" GridPane.rowIndex="1">
+                           <tooltip>
+                              <Tooltip text="Used to state the number of inputs to configure the network to.&#10;NOTE: Value must be at least 3." textAlignment="CENTER" wrapText="true">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Tooltip>
+                           </tooltip>
+                        </Button>
+                        <Label fx:id="input_error" textFill="RED" translateY="30.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField fx:id="slepian_switch" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="276.0" style="-fx-background-color: transparent;" GridPane.rowIndex="2">
+                           <tooltip>
+                              <Tooltip text="Use this field to explicitly state a switch size for the network.&#10;" textAlignment="CENTER" wrapText="true">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Tooltip>
+                           </tooltip>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="296.0" style="-fx-background-color: transparent;">
+                           <tooltip>
+                              <Tooltip text="Sets the number of stages to be used in the network.&#10;Unsure of how many stages to use? Click &quot;Optmise Network?&quot; below to have it done for you!" textAlignment="CENTER" wrapText="true">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Tooltip>
+                           </tooltip>
+                        </Button>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <Button fx:id="slepian_create" mnemonicParsing="false" onAction="#handleSlepianSubmit" prefHeight="44.0" prefWidth="161.0" style="-fx-background-color: transparent; -fx-border-color: #ccc; -fx-border-radius: 5px; -fx-cursor: hand;" text="Create Network" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="500.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1122.0" minWidth="333.0" percentWidth="0.0" prefWidth="500.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="0.0" prefWidth="500.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="92.0" minHeight="82.0" prefHeight="89.0" />
+                  <RowConstraints maxHeight="196.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="390.0" minHeight="10.0" prefHeight="390.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

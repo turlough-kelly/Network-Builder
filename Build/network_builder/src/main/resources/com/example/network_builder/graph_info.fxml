@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: linear-gradient(to bottom, white, rgb(220, 220, 220));" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.network_builder.networkController">
+   <center>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="868.0" prefWidth="1573.0" style="-fx-background-color: transparent;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="0.0" prefWidth="1429.0" />
+            <GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="725.0" prefWidth="1440.0" snapToPixel="false">
+               <children>
+                  <GridPane alignment="CENTER" prefHeight="517.0" prefWidth="976.0" style="-fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="106.0" stroke="BLACK" strokeType="INSIDE" width="185.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="106.0" stroke="BLACK" strokeType="INSIDE" width="185.0" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="106.0" stroke="BLACK" strokeType="INSIDE" width="185.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="106.0" stroke="BLACK" strokeType="INSIDE" width="185.0" GridPane.columnIndex="4" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="106.0" stroke="BLACK" strokeType="INSIDE" width="185.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="106.0" stroke="BLACK" strokeType="INSIDE" width="185.0" GridPane.columnIndex="2" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="106.0" stroke="BLACK" strokeType="INSIDE" width="185.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="106.0" stroke="BLACK" strokeType="INSIDE" width="185.0" GridPane.rowIndex="4" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="106.0" stroke="BLACK" strokeType="INSIDE" width="185.0" GridPane.rowIndex="2" />
+                        <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="179.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <children>
+                              <Line endX="88.0" endY="323.0" layoutX="90.0" layoutY="107.0" startX="-88.0" startY="-13.0" />
+                              <Line endX="88.0" layoutX="90.0" layoutY="261.0" startX="-88.0" />
+                              <Line endX="88.0" endY="-13.0" layoutX="90.0" layoutY="522.0" startX="-88.0" startY="-13.0" />
+                              <Line endX="88.0" endY="10.0" layoutX="90.0" startX="-88.0" startY="10.0" />
+                              <Line endX="88.0" endY="156.0" layoutX="90.0" layoutY="313.0" startX="-88.0" />
+                              <Line endX="95.0" endY="119.0" layoutX="84.0" layoutY="105.0" startX="-81.0" startY="-50.0" />
+                              <Line endX="88.0" endY="-207.0" layoutX="91.0" layoutY="260.0" startX="-88.0" startY="-40.0" />
+                              <Line endX="88.0" endY="-173.0" layoutX="90.0" layoutY="470.0" startX="-88.0" />
+                              <Line endX="88.0" endY="-323.0" layoutX="90.0" layoutY="415.0" startX="-88.0" startY="13.0" />
+                              <Line endX="88.0" endY="-323.0" layoutX="90.0" layoutY="415.0" startX="-88.0" startY="13.0" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="179.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                           <children>
+                              <Line endX="88.0" endY="323.0" layoutX="90.0" layoutY="107.0" startX="-88.0" startY="-13.0" />
+                              <Line endX="88.0" layoutX="90.0" layoutY="261.0" startX="-88.0" />
+                              <Line endX="88.0" endY="-13.0" layoutX="90.0" layoutY="522.0" startX="-88.0" startY="-13.0" />
+                              <Line endX="88.0" endY="10.0" layoutX="90.0" startX="-88.0" startY="10.0" />
+                              <Line endX="88.0" endY="156.0" layoutX="90.0" layoutY="313.0" startX="-88.0" startY="-13.0" />
+                              <Line endX="95.0" endY="119.0" layoutX="84.0" layoutY="105.0" startX="-81.0" startY="-50.0" />
+                              <Line endX="88.0" endY="-207.0" layoutX="91.0" layoutY="260.0" startX="-88.0" startY="-40.0" />
+                              <Line endX="88.0" endY="-173.0" layoutX="90.0" layoutY="470.0" startX="-88.0" />
+                              <Line endX="88.0" endY="-323.0" layoutX="90.0" layoutY="411.0" startX="-88.0" startY="13.0" />
+                           </children>
+                        </AnchorPane>
+                        <Button mnemonicParsing="false" prefHeight="113.0" prefWidth="220.0" style="-fx-background-color: transparent; -fx-border-radius: 5px;" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Label text="5 x 9" />
+                        <Label text="9 x 5" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                        <Label text="9 x 5" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                        <Label text="9 x 5" GridPane.columnIndex="4" />
+                        <Label text="10 x 10" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                        <Label text="10 x 10" GridPane.columnIndex="2" />
+                        <Label text="5 x 9" GridPane.rowIndex="4" />
+                        <Label text="5 x 9" GridPane.rowIndex="2" />
+                        <Label fx:id="s1n2" text="2" translateY="40.0" GridPane.rowIndex="1" />
+                        <Label fx:id="s2n2" text="2" translateY="40.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <Label fx:id="s3n2" text="2" translateY="40.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                        <Label fx:id="s1n3" translateY="40.0" GridPane.rowIndex="3" />
+                        <Label fx:id="s2n3" translateY="40.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <Label fx:id="s3n3" translateY="40.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                        <Label alignment="CENTER" prefHeight="10.0" prefWidth="107.0" rotate="90.0" text=".   .   .   ." textAlignment="CENTER" translateX="5.0" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="10.0" prefWidth="107.0" rotate="90.0" text=".   .   .   ." textAlignment="CENTER" translateX="5.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="10.0" prefWidth="107.0" rotate="90.0" text=".   .   .   ." textAlignment="CENTER" translateX="5.0" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="522.0" prefWidth="179.0" rotate="180.0" GridPane.rowIndex="1">
+                     <children>
+                        <Line endY="-13.0" layoutX="90.0" layoutY="107.0" startX="-88.0" startY="-13.0" />
+                        <Line layoutX="90.0" layoutY="261.0" startX="-88.0" />
+                        <Line endY="-13.0" layoutX="90.0" layoutY="522.0" startX="-88.0" startY="-13.0" />
+                        <Line endY="10.0" layoutX="90.0" startX="-88.0" startY="10.0" />
+                        <Line endY="-13.0" layoutX="90.0" layoutY="313.0" startX="-88.0" startY="-13.0" />
+                        <Line endX="7.0" endY="-50.0" layoutX="84.0" layoutY="105.0" startX="-81.0" startY="-50.0" />
+                        <Line endY="-40.0" layoutX="91.0" layoutY="260.0" startX="-88.0" startY="-40.0" />
+                        <Line layoutX="90.0" layoutY="470.0" startX="-88.0" />
+                        <Line endY="13.0" layoutX="90.0" layoutY="415.0" startX="-88.0" startY="13.0" />
+                        <Line endX="100.0" layoutX="52.0" layoutY="486.0" startX="-50.0" translateY="-513.0" />
+                        <Line endX="100.0" startX="-50.0" translateX="53.0" translateY="546.0" />
+                        <Line endX="172.0" rotate="90.0" startX="-400.0" translateX="267.0" translateY="260.0" />
+                        <Label fx:id="input" layoutX="96.0" layoutY="217.0" prefHeight="101.0" prefWidth="100.0" rotate="180.0" text="Inputs 50" textAlignment="RIGHT" translateX="15.0" translateY="-7.0" wrapText="true">
+                           <padding>
+                              <Insets bottom="3.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="in1" layoutX="101.0" layoutY="420.0" rotate="180.0" text="5" />
+                        <Label fx:id="in2" layoutX="101.0" layoutY="213.0" rotate="180.0" text="5" />
+                        <Label fx:id="in3" layoutX="99.0" layoutY="7.0" rotate="180.0" text="5" />
+                        <Label fx:id="in11" layoutX="106.0" layoutY="291.0" rotate="180.0" text="1" />
+                        <Label fx:id="in12" layoutX="106.0" layoutY="252.0" rotate="180.0" text="2" />
+                        <Label fx:id="in13" layoutX="106.0" layoutY="461.0" rotate="180.0" text="2" />
+                        <Label fx:id="in14" layoutX="106.0" layoutY="500.0" rotate="180.0" text="1" />
+                        <Label fx:id="in15" layoutX="106.0" layoutY="85.0" rotate="180.0" text="1" />
+                        <Label fx:id="in16" layoutX="107.0" layoutY="46.0" rotate="180.0" text="2" />
+                        <Label layoutX="28.0" layoutY="441.0" rotate="90.0" text=".   .   .   .">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="25.0" rotate="90.0" text=".   .   .   .">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="234.0" rotate="90.0" text=".   .   .   .">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="152.0" layoutY="227.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="86.0" style="-fx-background-color: transparent; -fx-border-color: red;">
+                           <tooltip>
+                              <Tooltip autoHide="true" contentDisplay="CENTER" text="TOTAL INPUTS&#10;The total number of inputs in the network.&#10;" textAlignment="CENTER" wrapText="true" />
+                           </tooltip>
+                        </Button>
+                        <Button layoutX="1.0" layoutY="410.0" mnemonicParsing="false" prefHeight="111.0" prefWidth="140.0" style="-fx-background-color: transparent; -fx-border-color: red;">
+                           <tooltip>
+                              <Tooltip text="INPUTS PER SWITCH&#10;The total number of inputs per switch.&#10;Represented as n." />
+                           </tooltip>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="111.0" prefWidth="900.0" GridPane.columnIndex="1">
+                     <children>
+                        <Label fx:id="s1n1" layoutX="82.0" layoutY="67.0" text="1" />
+                        <Label fx:id="s2n1" layoutX="447.0" layoutY="67.0" text="1" />
+                        <Label fx:id="s3n1" layoutX="808.0" layoutY="67.0" text="1" />
+                        <Button layoutX="58.0" layoutY="53.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="57.0" style="-fx-background-color: transparent; -fx-border-color: red;">
+                           <tooltip>
+                              <Tooltip text="SWITCH NUMBER&#10;The position of the switch in the current stage." />
+                           </tooltip>
+                        </Button>
+                        <Button layoutX="699.0" layoutY="53.0" mnemonicParsing="false" prefHeight="572.0" prefWidth="201.0" style="-fx-background-color: transparent; -fx-border-color: red;">
+                           <tooltip>
+                              <Tooltip text="STAGE&#10;The stage in the network. Shows the dimensions of each switch, and how many switches are present." />
+                           </tooltip>
+                        </Button>
+                        <Button layoutX="181.0" layoutY="85.0" mnemonicParsing="false" prefHeight="526.0" prefWidth="179.0" style="-fx-background-color: transparent; -fx-border-color: red;">
+                           <tooltip>
+                              <Tooltip text="SWITCH CONNECTIONS&#10;Represents the connections from one switch to another.&#10;Each switch connects to every switch in the succeeding stage." />
+                           </tooltip>
+                        </Button>
+                        <Button layoutX="379.0" layoutY="514.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="147.0" style="-fx-background-color: transparent; -fx-border-color: red;">
+                           <tooltip>
+                              <Tooltip text="SWITCH DIMENSIONS&#10;Showcases the dimensions of the switch, which is the number of crosspoints in that switch.&#10;Each stage calculates its dimensions differently. See &quot;Equations&quot; for more information." />
+                           </tooltip>
+                        </Button>
+                        <Label layoutX="431.0" layoutY="340.0" text="10 x 10" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="522.0" prefWidth="179.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <children>
+                        <Line endY="-13.0" layoutX="90.0" layoutY="107.0" startX="-88.0" startY="-13.0" />
+                        <Line layoutX="90.0" layoutY="261.0" startX="-88.0" />
+                        <Line endY="-13.0" layoutX="90.0" layoutY="522.0" startX="-88.0" startY="-13.0" />
+                        <Line endY="10.0" layoutX="90.0" startX="-88.0" startY="10.0" />
+                        <Line endY="-13.0" layoutX="90.0" layoutY="313.0" startX="-88.0" startY="-13.0" />
+                        <Line endX="7.0" endY="-50.0" layoutX="84.0" layoutY="105.0" startX="-81.0" startY="-50.0" />
+                        <Line endY="-40.0" layoutX="91.0" layoutY="260.0" startX="-88.0" startY="-40.0" />
+                        <Line layoutX="90.0" layoutY="470.0" startX="-88.0" />
+                        <Line endY="13.0" layoutX="90.0" layoutY="415.0" startX="-88.0" startY="13.0" />
+                        <Line endX="100.0" layoutX="52.0" layoutY="486.0" startX="-50.0" translateY="-513.0" />
+                        <Line endX="100.0" startX="-50.0" translateX="53.0" translateY="546.0" />
+                        <Line endX="172.0" rotate="90.0" startX="-400.0" translateX="267.0" translateY="260.0" />
+                        <Label fx:id="output" alignment="CENTER_RIGHT" layoutX="96.0" layoutY="218.0" prefHeight="101.0" prefWidth="100.0" text="Outputs 50" textAlignment="RIGHT" translateX="20.0" translateY="-7.0">
+                           <padding>
+                              <Insets bottom="3.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="out3" layoutX="106.0" layoutY="501.0" text="5" />
+                        <Label fx:id="out2" layoutX="106.0" layoutY="292.0" text="5" />
+                        <Label fx:id="out1" layoutX="106.0" layoutY="86.0" text="5" />
+                        <Label fx:id="in111" layoutX="107.0" layoutY="212.0" text="1" />
+                        <Label fx:id="in121" layoutX="106.0" layoutY="253.0" text="2" />
+                        <Label fx:id="in131" layoutX="106.0" layoutY="462.0" text="2" />
+                        <Label fx:id="in141" layoutX="106.0" layoutY="420.0" text="1" />
+                        <Label fx:id="in151" layoutX="106.0" layoutY="2.0" text="1" />
+                        <Label fx:id="in161" layoutX="107.0" layoutY="47.0" text="2" />
+                        <Label layoutX="28.0" layoutY="484.0" rotate="90.0" text=".   .   .   .">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="68.0" rotate="90.0" text=".   .   .   .">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="275.0" rotate="90.0" text=".   .   .   .">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="-3.0" layoutY="391.0" mnemonicParsing="false" prefHeight="136.0" prefWidth="139.0" style="-fx-background-color: transparent; -fx-border-color: red;">
+                           <tooltip>
+                              <Tooltip text="OUTPUTS PER SWITCH&#10;The number of outputs of each switch. This is always equal to the number of inputs." />
+                           </tooltip>
+                        </Button>
+                        <Button layoutX="152.0" layoutY="215.0" mnemonicParsing="false" prefHeight="97.0" prefWidth="96.0" style="-fx-background-color: transparent; -fx-border-color: red;">
+                           <tooltip>
+                              <Tooltip text="TOTAL OUTPUTS&#10;The total number of outputs in the network. This will always match the inputs." />
+                           </tooltip>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="300.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1122.0" minWidth="333.0" percentWidth="0.0" prefWidth="900.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="0.0" prefWidth="300.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="92.0" minHeight="82.0" prefHeight="89.0" valignment="TOP" />
+                  <RowConstraints maxHeight="521.0" minHeight="10.0" prefHeight="517.0" valignment="CENTER" vgrow="ALWAYS" />
+                  <RowConstraints maxHeight="236.0" minHeight="10.0" prefHeight="114.0" valignment="BOTTOM" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+         </children>
+      </VBox>
+   </center>
+   <right>
+      <VBox fx:id="menu1" alignment="TOP_CENTER" prefHeight="866.0" prefWidth="195.0" style="-fx-background-color: rgb(220, 220, 220);" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="58.0" prefWidth="203.0" text="Glossary" textAlignment="CENTER" underline="true" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font size="33.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="stages" text="TOTAL INPUTS&#10;The total number of inputs in the network.&#10;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="15.0" />
+               </padding>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="cp_count" prefHeight="60.0" prefWidth="218.0" text="INPUTS PER SWITCH&#10;The total number of inputs per switch.&#10;Represented as n.">
+               <padding>
+                  <Insets bottom="15.0" />
+               </padding>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="r_value" prefHeight="67.0" prefWidth="195.0" text="SWITCH NUMBER&#10;The position of the switch in the current &#10;stage.">
+               <padding>
+                  <Insets bottom="15.0" />
+               </padding>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="n_value" prefHeight="125.0" prefWidth="195.0" text="SWITCH CONNECTIONS&#10;Represents the connections from one &#10;switch to another.&#10;Each switch connects to every switch in &#10;the succeeding stage.">
+               <padding>
+                  <Insets bottom="15.0" />
+               </padding>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="in_value" prefHeight="120.0" prefWidth="195.0" text="SWITCH DIMENSIONS&#10;Showcases the dimensions of the switch, &#10;which is the number of crosspoints in that &#10;switch.&#10;Each stage calculates its dimensions &#10;differently. See &quot;Equations&quot; for &#10;more information.">
+               <padding>
+                  <Insets bottom="15.0" />
+               </padding>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="ex_time" prefHeight="86.0" prefWidth="195.0" text="STAGE&#10;The stage in the network. Shows the &#10;dimensions of each switch, and how many &#10;switches are present.">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <padding>
+                  <Insets bottom="15.0" />
+               </padding>
+            </Label>
+            <Label fx:id="stages1" prefHeight="79.0" prefWidth="195.0" text="OUTPUTS PER SWITCH&#10;The number of outputs of each switch. &#10;This is always equal to the number of &#10;inputs.">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="15.0" />
+               </padding>
+            </Label>
+            <Label fx:id="stages11" prefHeight="68.0" prefWidth="195.0" text="TOTAL OUTPUTS&#10;The total number of outputs in the &#10;network. This will always match the inputs.">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="15.0" />
+               </padding>
+            </Label>
+         </children>
+      </VBox>
+   </right>
+   <top>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: rgb(220, 220, 220);" BorderPane.alignment="TOP_RIGHT">
+        <items>
+          <Button mnemonicParsing="false" onAction="#viewDiagram" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-radius: 5px; -fx-cursor: hand;" text="Return to Graph">
+               <font>
+                  <Font name="Tw Cen MT" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="stage_view" alignment="CENTER" contentDisplay="TEXT_ONLY" text="Hover over any part of the example diagram below to read about a specific part of the diagram" textAlignment="JUSTIFY" translateX="450.0">
+               <font>
+                  <Font name="Tw Cen MT" size="18.0" />
+               </font>
+            </Label>
+        </items>
+      </ToolBar>
+   </top>
+</BorderPane>

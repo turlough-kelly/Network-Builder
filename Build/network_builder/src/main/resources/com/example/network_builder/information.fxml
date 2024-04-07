@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.network_builder.networkController">
+   <children>
+      <AnchorPane prefHeight="491.0" prefWidth="841.0" style="-fx-background-color: linear-gradient(to bottom, white, rgb(220, 220, 220));" StackPane.alignment="CENTER">
+         <children>
+            <GridPane alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="720.0" prefWidth="1280.0" snapToPixel="false" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onReturnClick" prefHeight="44.0" prefWidth="143.0" style="-fx-background-color: transparent; -fx-border-color: #ccc; -fx-border-radius: 5px; -fx-cursor: hand;" text="Return" GridPane.halignment="LEFT" GridPane.hgrow="NEVER" GridPane.valignment="BOTTOM" GridPane.vgrow="NEVER">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="15.0" left="15.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Information" textAlignment="CENTER" wrappingWidth="959.662109375" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+                     <font>
+                        <Font name="Tw Cen MT" size="73.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#949494" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="960.13671875" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM" />
+                  <GridPane prefHeight="390.0" prefWidth="561.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="What are Clos Switches?" wrappingWidth="665.662109375" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Tw Cen MT" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="What are Slepian Switches?" wrappingWidth="662.662109375" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Tw Cen MT" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="How does this application work?" wrappingWidth="659.662109375" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Tw Cen MT" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="First invented by Edson Erwin in 1938 and officially formalised by Charles Clos in 1952, the Clos Network is a strictly non-blocking, high capacity, multi-stage switching network used in switching fabrics across large-scale data centers. Initially, it provided a highly effective method of routing calls on mechanical telephone systems. While it was overtaken by further advancements in switching. technology in the years following its formalisation, it later became the basis of switch operations in Ethernet data communications in the 1990s in data center networks, and serves as the basis of many large-scale, interconnected fabrics to this day. For this reason, Clos Networks are vital for many cloud-based operations today." wrappingWidth="658.27734375" GridPane.rowIndex="2" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="The Slepian Network (more commonly referred to as a Beneš Network) is a subtype of the Clos Network, first proven by David Slepian in 1955 and later refined by Václav Edvard Beneš in 1962. Having a lot of the same use cases as a Clos Network, the Slepian Network is a rearrangable non-blocking network, used in telecommunication networks, but also in multi-processor systems and parallel computers, given its innate non-blocking characteristics and rearranging opportunities. For this reason, while similar, the Clos and Slepian Networks have very different use cases.&#10;A Slepian network architecture may be chosen over a Clos network due to its known ability to efficiently route permutations, meaning blocked call pathways are made through rerouting existing calls through different pathways. This is done at each stage through the switches contained withinthem. For applicaitons where dynamic rearrangement is required, this provides a clear solutionthat a Clos network does not." wrappingWidth="655.49609375" GridPane.rowIndex="4" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="This application aims to aid in the designing of networks containing Clos or Slepian switches, to be used for a variety of use cases.&#10;Its main goal is to find the most optimial network design based on the switch type used, as well as the input or, if desired, to create a network using parameters set by the user, including input, number of stages in the network, and, in the case of Slepian networks, the size of the switches used.&#10;To begin, return to the main menu by clicking the &quot;Return&quot; button found above, where you will be prompted to select the type of switch you would like to use. Then, enter all relevant information into the areas provided and wait as the application generates your network, where you can view information including how the numbers were calculated, the number of stages (if not specified), and more.&#10;NOTE: this application is experimental, and as such there may be cases where application may perform below expectations. Although rare, please keep this in mind as you use the tool." wrappingWidth="656.833984375" GridPane.rowIndex="6" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="687.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1122.0" minWidth="0.0" percentWidth="0.0" prefWidth="0.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="0.0" prefWidth="621.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="92.0" minHeight="82.0" prefHeight="89.0" />
+                  <RowConstraints maxHeight="196.0" minHeight="0.0" prefHeight="47.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="196.0" minHeight="10.0" prefHeight="114.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="390.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="390.0" minHeight="10.0" prefHeight="164.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="302.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="302.0" minHeight="10.0" prefHeight="210.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
